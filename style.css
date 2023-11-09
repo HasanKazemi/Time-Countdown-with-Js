@@ -1,0 +1,13 @@
+.get-number * {
+    display: block;
+    margin: auto;
+    width: 30%;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+}
+
+.countdown {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 48px;
+}
