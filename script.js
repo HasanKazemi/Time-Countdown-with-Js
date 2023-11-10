@@ -1,10 +1,18 @@
 // catch the Countdown Date elements
-const CountdownDay = document.querySelector("#day")
-const CountdownMonth = document.querySelector("#month")
 const CountdownYear = document.querySelector("#year")
+const CountdownMonth = document.querySelector("#month")
+const CountdownDay = document.querySelector("#day")
 const CountdownHour = document.querySelector("#hour")
 const CountdownMinute = document.querySelector("#minute")
 const CountdownSecond = document.querySelector("#second")
+
+// set default values for countDown
+CountdownYear.value = new Date().getFullYear()
+CountdownMonth.value = new Date().getMonth() + 1
+CountdownDay.value = new Date().getDate()
+CountdownHour.value = new Date().getHours()
+CountdownMinute.value = new Date().getMinutes()
+CountdownSecond.value = new Date().getSeconds()
 
 document.querySelector(".start-countdown").addEventListener("click", ()=>{
     // get month index by minus from month number
